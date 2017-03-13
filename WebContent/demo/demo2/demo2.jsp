@@ -25,8 +25,8 @@
 		Cookie[] cookies = request.getCookies();
 		if(cookies != null && cookies.length > 0){
 			for(Cookie cookie : cookies){
-				if(cookie.getName().startsWith("cookieFinalName")){	
-					out.print(cookie.getValue());
+				if(cookie.getName().startsWith(cookieFinalName)){	
+					out.print(cookie.getValue()+"<br/>");
 				}
 			}
 		}
