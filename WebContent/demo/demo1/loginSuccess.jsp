@@ -33,7 +33,6 @@
 				cookie.setMaxAge(60);
 				response.addCookie(cookie);//设置持久化cookie，存储在磁盘中
 				out.println("hello " + name + "\n");
-				Date date = new Date();
 				out.println(System.currentTimeMillis());
 			}
 		}else{
